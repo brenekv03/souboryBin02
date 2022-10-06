@@ -57,7 +57,10 @@ namespace souboryBin02
             while(!streamReader.EndOfStream)
             {
                 listBox1.Items.Add(streamReader.ReadLine());
+                string line = streamReader.ReadLine();
+                textBox2.Text +=line;
             }
+            streamReader.Close();
         }
     }
 }
